@@ -1,22 +1,11 @@
-import { LineChart } from "@mui/x-charts"
+import Graph1 from "../UI/Graph1";
 
 function Cases({ datas }) {
-    // console.log(datas)
-
-    const uData = datas.map((data) => Number(data.dailyconfirmed));
-    const pData = datas.map((data) => data.date);
-
-    // console.log(uData, pData)
-    return (<>
-        < >
-            <LineChart
-                series={[
-                    { data: uData, label: 'uv', id: 'uvId', showMark: false },
-                ]}
-                xAxis={[{ scaleType: 'point', data: pData }]}
-            />
-        </>
-    </>)
+    const numbers = datas.map((data) => Number(data.dailyconfirmed));
+    const dates = datas.map((data) => data.date);
+    const color = '#ffdd12'; // Yellow
+    const label = "Cases";
+    return (<Graph1 color={color} label={label} numbers={numbers} dates={dates} />)
 }
 
 export default Cases

@@ -9,10 +9,6 @@ function Navbar({ days, setDays }) {
     // const left = '100px'
     // const top = '17px'
 
-    // For Small Devices => 
-    // const left = '30px'
-    // const top = '17px'
-
 
     return (<>
         <div className='relative'>

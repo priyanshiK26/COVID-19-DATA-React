@@ -1,22 +1,11 @@
-import { LineChart } from "@mui/x-charts"
+import Graph1 from "../UI/Graph1";
 
 function Deceased({ datas }) {
-    // console.log(datas)
-
-    const uData = datas.map((data) => Number(data.dailydeceased));
-    const pData = datas.map((data) => data.date);
-
-    // console.log(uData, pData)
-    return (<>
-        < >
-            <LineChart
-                series={[
-                    { data: uData, label: 'Deceased', id: 'uvId', showMark: false, color: "#000000" },
-                ]}
-                xAxis={[{ scaleType: 'point', data: pData }]}
-            />
-        </>
-    </>)
+    const numbers = datas.map((data) => Number(data.dailydeceased));
+    const dates = datas.map((data) => data.date);
+    const color = '#C70039'; // Red
+    const label = "Deceased";
+    return (<Graph1 color={color} label={label} numbers={numbers} dates={dates} />)
 }
 
 export default Deceased

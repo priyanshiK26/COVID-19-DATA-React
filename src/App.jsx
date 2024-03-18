@@ -7,9 +7,9 @@ function App() {
   const [days, setDays] = useState(10);
 
   return (
-    <div className=" relative ">
+    <div >
       <Navbar days={days} setDays={setDays} />
-      <Data days={days} setDays={setDays} />
+      <Data days={days} />
     </div>
   )
 }

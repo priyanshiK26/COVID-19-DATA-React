@@ -13,7 +13,7 @@ function Topbar({ days, setDays }) {
 
 
     return <div className={
-        `fixed top-[17px] sm:left-[100px] left-[55px] pr-[100px] flex justify-around w-screen items-center p-5`
+        `absolute top-[17px] sm:left-[100px] sm:pr-[100px] flex justify-around w-[90vw] items-center p-5`
     }>
         <div>
             <div className=" sm:text-2xl font-bold text-blue-800">
