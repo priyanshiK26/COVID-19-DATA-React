@@ -15,7 +15,7 @@ function Sidebar() {
 
     return (
         <div
-            className={`sticky top-0 left-0 w-[30px] sm:w-[100px] h-screen flex flex-col justify-between items-center p-8 bg-[#3325ae]`}
+            className={`fixed top-0 left-0 w-[30px] sm:w-[100px] h-[105vh] sm:h-screen flex flex-col justify-between items-center p-8 bg-[#3325ae]`}
         >
             <div>
                 <CoronavirusIcon className=' text-white cursor-pointer' fontSize='large' />

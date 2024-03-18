@@ -3,12 +3,21 @@ import Topbar from './Topbar';
 
 
 
-function Navbar() {
+function Navbar({ days, setDays }) {
+
+    // For Big Devices =>
+    // const left = '100px'
+    // const top = '17px'
+
+    // For Small Devices => 
+    // const left = '30px'
+    // const top = '17px'
+
 
     return (<>
         <div className='relative'>
             <Sidebar />
-            <Topbar />
+            <Topbar days={days} setDays={setDays} />
         </div>
     </>)
 }
